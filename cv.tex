@@ -1,0 +1,142 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+
+%\setmainfont{Equity Text A Regular 111011.otf}
+
+\setmainfont{Hoefler Text.ttf}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+
+
+\par{
+		{\Huge Patrick J. Murphy
+	}\bigskip\par}
+	\bigskip
+
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+
+
+   
+      193 Seal Cove Road \qquad \qquad \qquad \qquad \qquad \href{https://github.com/patjm1992}{github.com/patjm1992}  \\
+      Southwest Harbor, ME 04679 \\
+   (207) 479-6137 \\
+ \href{mailto:patjm1992@gmail.com}{patjm1992@gmail.com}
+
+\\
+\vspace*{0.5cm}
+%Section: Education
+\section{Education}
+\begin{tabular}{rl}	
+\footnotesize{May 2016} & {\setmainfont{HoeflerText Bold.otf}B.S., Computer Science} \\ & {\setmainfont{HoeflerText Italic.otf}{University of Maine at Orono}} \\
+&  \small\emph{\setmainfont{smallcaps.otf}{cum laude}} | Minor: New Media\\
+
+\end{tabular}
+
+\vspace*{0.5cm}
+\section{Projects}
+
+\begin{tabular}{r p{11cm}}
+ {\setmainfont{HoeflerText Italic.otf}}&\href{https://github.com/patjm1992/carlywm}{github.com/patjm1992/carlywm}\\ & A keyboard-driven dynamic tiling window manager for X that supports several tiling layouts, floating support and more. Written entirely in C.\\~\\
+ 
+ 
+ 
+ {\setmainfont{HoeflerText Italic.otf}}\hspace*{1.55cm}& \href{https://patjm1992.github.io/house-of-cards-webgl}{patjm1992.github.io/house-of-cards-webgl}\\ &  Live responsive website that uses the 3D JavaScript library three.js to demonstrate a particle system built from LIDAR point data.  \\
+
+\end{tabular}
+
+\vspace*{0.5cm}
+
+\section{Technical Skills}
+\begin{tabular}{rl}
+ \footnotesize{Languages:}& \hspace*{0.2cm}  C, Python, Java, JavaScript, HTML/CSS\\
+ \footnotesize{Other:}& \hspace*{0.2cm} UNIX system administration, GIT, \LaTeX\\
+
+\end{tabular}
+
+\vspace*{0.5cm}
+
+% EMMC
+ \section{Work Experience}
+ \begin{tabular}{r p{11cm}}\footnotesize{Summer 2015} &IT/IS Intern at {\setmainfont{smallcaps.otf}{Eastern Maine Medical Center} \\&{\setmainfont{HoeflerText Italic.otf}Bangor, Maine}\\~\\&{Provided Windows 7 software support for hospital staff. Was responsible for deployments/upgrades, documentation, and hardware support as well. Worked with customers both in person and remotely.}\\\multicolumn{2}{c}{} \\
+\end{tabular}
+
+
+\begin{tabular}{r p{11cm}}\footnotesize{2014 - 2016} &Student Worker at {\setmainfont{smallcaps.otf}University of Maine Dining Services} \\&\emph{\setmainfont{HoeflerText Italic.otf}Orono, Maine} \\~\\&{General dining hall duties.}\\\multicolumn{2}{c}{} \\
+ 
+ 
+
+ % THE GET
+ 
+ 
+ \footnotesize{Summer 2014} &Backroom Data Team Member at {\setmainfont{smallcaps.otf}Target Corporation} \\&\emph{\setmainfont{HoeflerText Italic.otf}Bangor,  Maine}\\~\\&{ Maintained the backroom area including stocking,  pulling items, and responding to online item requests.}\\\multicolumn{2}{c}{} \\
+ 
+ 
+
+% THE MART
+
+ %\footnotesize{2007 - 2013} &Assistant Produce Manager at {\setmainfont{smallcaps.otf}{Southwest Harbor Food Mart}} \\&{\setmainfont{HoeflerText Italic.otf}{Southwest Harbor, Maine}}\\~\\&\footnotesize{   Duties included creating and maintaining displays, stocking produce, addressing customer        	 concerns about produce products, and ensuring order and invoice accuracy.}\\\multicolumn{2}{c}{} \\
+\end{tabular}
+
+
+
+
+
+
+%\XeTeXpdffile ''GMAT.pdf'' page 1 scaled 800
+
+\end{document}
